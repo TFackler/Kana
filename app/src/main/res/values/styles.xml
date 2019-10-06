@@ -22,7 +22,7 @@
     </style>
 
     <style name="KanjiTheme" parent="Theme.MaterialComponents.NoActionBar">
-        <item name="colorPrimary">@color/kanji_color_background</item>
+        <item name="colorPrimary">@color/kanji_color_primary</item>
         <item name="colorPrimaryVariant">@color/kanji_color_primary_variant</item>
         <item name="colorSecondary">@color/kanji_color_secondary</item>
         <item name="colorSecondaryVariant">@color/kanji_color_secondary_variant</item>

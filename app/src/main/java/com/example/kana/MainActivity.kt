@@ -8,9 +8,10 @@ import com.bluelinelabs.conductor.Conductor
 import com.bluelinelabs.conductor.Router
 import com.bluelinelabs.conductor.RouterTransaction
 import com.bluelinelabs.conductor.changehandler.HorizontalChangeHandler
+import com.example.kana.controllers.HiraganaNavController
+import com.example.kana.controllers.KanjiNavController
+import com.example.kana.controllers.KatakanaNavController
 import com.example.kana.controllers.MainNavController
-import com.example.kana.controllers.ReadingNavController
-import com.example.kana.controllers.WritingNavController
 
 class MainActivity : AppCompatActivity() {
 
@@ -35,17 +36,25 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+
     // navigation
-    fun navWriting(view : View) {
+    fun navKanji(view : View) {
         router.pushController(
-            RouterTransaction.with(WritingNavController())
+            RouterTransaction.with(KanjiNavController())
             .pushChangeHandler(HorizontalChangeHandler())
             .popChangeHandler(HorizontalChangeHandler()))
     }
 
-    fun navReading(view : View) {
-        router.pushController(RouterTransaction.with(ReadingNavController())
+    fun navHiragana(view : View) {
+        router.pushController(RouterTransaction.with(HiraganaNavController())
             .pushChangeHandler(HorizontalChangeHandler())
             .popChangeHandler(HorizontalChangeHandler()))
+    }
+
+    fun navKatakana(view : View) {
+        router.pushController(
+            RouterTransaction.with(KatakanaNavController())
+                .pushChangeHandler(HorizontalChangeHandler())
+                .popChangeHandler(HorizontalChangeHandler()))
     }
 }

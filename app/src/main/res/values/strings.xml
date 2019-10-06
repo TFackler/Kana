@@ -1,12 +1,17 @@
 <resources>
     <string name="app_name">Kana</string>
-    <string name="main_nav_info">Please select what you want to practice.</string>
-    <string name="reading_nav_info">Practice reading</string>
-    <string name="writing_nav_info">Practice writing</string>
+    <string name="main_nav_info">Please select an alphabet.</string>
+    <string name="practice_nav_info">Please select an exercise.</string>
 
+    <string name="nav_write_button_label">Writing</string>
+    <string name="nav_read_button_label">Reading</string>
+    <string name="nav_learn_button_label">Learning</string>
 
-    <string name="main_nav_write_button_label">Writing</string>
-    <string name="main_nav_read_button_label">Reading</string>
+    <string name="nav_kanji">Kanji</string>
     <string name="nav_katakana">Katakana</string>
     <string name="nav_hiragana">Hiragana</string>
+
+    <string name="nav_learn">Learn</string>
+    <string name="nav_write">Write</string>
+    <string name="nav_read">Read</string>
 </resources>

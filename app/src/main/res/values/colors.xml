@@ -1,6 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <!-- Main Theme Colors -->
+
+    <!--colorPrimary colors map to components and elements, such as app bars and buttons. -->
+    <!--colorSecondary colors are most often used as accents on components, such as FABs and -->
+    <!--selection controls.-->
+    <color name="main_color_primary">#6200ee</color>
+    <color name="main_color_primary_variant">#3700b3</color>
+    <color name="main_color_secondary">#03dac6</color>
+    <color name="main_color_secondary_variant">#018786</color>
+
+    <!--colorBackground appears behind scrollable content and is used for the default window-->
+    <!--background. colorSurface is mapped to the surface of components such as cards, sheets-->
+    <!--and menus. colorError is used to indicate an error state for components such as-->
+    <!--text fields.-->
+    <color name="main_color_background">#ffffff</color>
+    <color name="main_color_surface">#ffffff</color>
+    <color name="main_color_error">#b00020</color>
+
+    <!--"On" colors define how text, icons and strokes are colored in relation to the surface-->
+    <!--on which they appear.-->
+    <color name="main_color_on_primary">#ffffff</color>
+    <color name="main_color_on_secondary">#000000</color>
+    <color name="main_color_on_background">#000000</color>
+    <color name="main_color_on_surface">#000000</color>
+    <color name="main_color_on_error">#ffffff</color>
+
+    <!-- Kanji Theme -->
+    <color name="kanji_color_primary">#6200ee</color>
+    <color name="kanji_color_primary_variant">#3700b3</color>
+    <color name="kanji_color_secondary">#03dac6</color>
+    <color name="kanji_color_secondary_variant">#018786</color>
+
+    <color name="kanji_color_background">#ffffff</color>
+    <color name="kanji_color_surface">#ffffff</color>
+    <color name="kanji_color_error">#b00020</color>
+
+    <color name="kanji_color_on_primary">#ffffff</color>
+    <color name="kanji_color_on_secondary">#000000</color>
+    <color name="kanji_color_on_background">#000000</color>
+    <color name="kanji_color_on_surface">#000000</color>
+    <color name="kanji_color_on_error">#ffffff</color>
+
+    <!-- Hiragana Theme -->
+    <color name="hiragana_color_primary">#6200ee</color>
+    <color name="hiragana_color_primary_variant">#3700b3</color>
+    <color name="hiragana_color_secondary">#03dac6</color>
+    <color name="hiragana_color_secondary_variant">#018786</color>
+
+    <color name="hiragana_color_background">#ffffff</color>
+    <color name="hiragana_color_surface">#ffffff</color>
+    <color name="hiragana_color_error">#b00020</color>
+
+    <color name="hiragana_color_on_primary">#ffffff</color>
+    <color name="hiragana_color_on_secondary">#000000</color>
+    <color name="hiragana_color_on_background">#000000</color>
+    <color name="hiragana_color_on_surface">#000000</color>
+    <color name="hiragana_color_on_error">#ffffff</color>
+
+    <!-- Katakana Theme -->
+    <color name="katakana_color_primary">#6200ee</color>
+    <color name="katakana_color_primary_variant">#3700b3</color>
+    <color name="katakana_color_secondary">#03dac6</color>
+    <color name="katakana_color_secondary_variant">#018786</color>
+
+    <color name="katakana_color_background">#ffffff</color>
+    <color name="katakana_color_surface">#ffffff</color>
+    <color name="katakana_color_error">#b00020</color>
+
+    <color name="katakana_color_on_primary">#ffffff</color>
+    <color name="katakana_color_on_secondary">#000000</color>
+    <color name="katakana_color_on_background">#000000</color>
+    <color name="katakana_color_on_surface">#000000</color>
+    <color name="katakana_color_on_error">#ffffff</color>
 </resources>

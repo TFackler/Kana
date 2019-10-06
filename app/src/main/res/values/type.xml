@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.MainTheme.Body1.OnBackground" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/main_color_on_background</item>
+    </style>
+</resources>

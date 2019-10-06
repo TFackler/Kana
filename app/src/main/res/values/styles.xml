@@ -1,11 +1,75 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="MainTheme" parent="Theme.MaterialComponents.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/main_color_primary</item>
+        <item name="colorPrimaryVariant">@color/main_color_primary_variant</item>
+        <item name="colorSecondary">@color/main_color_secondary</item>
+        <item name="colorSecondaryVariant">@color/main_color_secondary_variant</item>
+
+        <item name="android:colorBackground">@color/main_color_background</item>
+        <item name="colorSurface">@color/main_color_surface</item>
+        <item name="colorError">@color/main_color_error</item>
+
+        <item name="colorOnPrimary">@color/main_color_on_primary</item>
+        <item name="colorOnSecondary">@color/main_color_on_secondary</item>
+        <item name="colorOnBackground">@color/main_color_on_background</item>
+        <item name="colorOnSurface">@color/main_color_on_surface</item>
+        <item name="colorOnError">@color/main_color_on_error</item>
+
+
+    </style>
+
+    <style name="KanjiTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/kanji_color_background</item>
+        <item name="colorPrimaryVariant">@color/kanji_color_primary_variant</item>
+        <item name="colorSecondary">@color/kanji_color_secondary</item>
+        <item name="colorSecondaryVariant">@color/kanji_color_secondary_variant</item>
+
+        <item name="android:colorBackground">@color/kanji_color_background</item>
+        <item name="colorSurface">@color/kanji_color_surface</item>
+        <item name="colorError">@color/kanji_color_error</item>
+
+        <item name="colorOnPrimary">@color/kanji_color_on_primary</item>
+        <item name="colorOnSecondary">@color/kanji_color_on_secondary</item>
+        <item name="colorOnBackground">@color/kanji_color_on_background</item>
+        <item name="colorOnSurface">@color/kanji_color_on_surface</item>
+        <item name="colorOnError">@color/kanji_color_on_error</item>
+    </style>
+
+    <style name="HiraganaTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/hiragana_color_primary</item>
+        <item name="colorPrimaryVariant">@color/hiragana_color_primary_variant</item>
+        <item name="colorSecondary">@color/hiragana_color_secondary</item>
+        <item name="colorSecondaryVariant">@color/hiragana_color_secondary_variant</item>
+
+        <item name="android:colorBackground">@color/hiragana_color_background</item>
+        <item name="colorSurface">@color/hiragana_color_surface</item>
+        <item name="colorError">@color/hiragana_color_error</item>
+
+        <item name="colorOnPrimary">@color/hiragana_color_on_primary</item>
+        <item name="colorOnSecondary">@color/hiragana_color_on_secondary</item>
+        <item name="colorOnBackground">@color/hiragana_color_on_background</item>
+        <item name="colorOnSurface">@color/hiragana_color_on_surface</item>
+        <item name="colorOnError">@color/hiragana_color_on_error</item>
+    </style>
+
+    <style name="KatakanaTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/katakana_color_primary</item>
+        <item name="colorPrimaryVariant">@color/katakana_color_primary_variant</item>
+        <item name="colorSecondary">@color/katakana_color_secondary</item>
+        <item name="colorSecondaryVariant">@color/katakana_color_secondary_variant</item>
+
+        <item name="android:colorBackground">@color/katakana_color_background</item>
+        <item name="colorSurface">@color/katakana_color_surface</item>
+        <item name="colorError">@color/katakana_color_error</item>
+
+        <item name="colorOnPrimary">@color/katakana_color_on_primary</item>
+        <item name="colorOnSecondary">@color/katakana_color_on_secondary</item>
+        <item name="colorOnBackground">@color/katakana_color_on_background</item>
+        <item name="colorOnSurface">@color/katakana_color_on_surface</item>
+        <item name="colorOnError">@color/katakana_color_on_error</item>
     </style>
 
 </resources>

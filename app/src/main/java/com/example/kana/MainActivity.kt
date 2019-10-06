@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.bluelinelabs.conductor.Conductor
 import com.bluelinelabs.conductor.Router
 import com.bluelinelabs.conductor.RouterTransaction
@@ -56,5 +57,9 @@ class MainActivity : AppCompatActivity() {
             RouterTransaction.with(KatakanaNavController())
                 .pushChangeHandler(HorizontalChangeHandler())
                 .popChangeHandler(HorizontalChangeHandler()))
+    }
+
+    fun actionNotImplemented(view : View) {
+        Toast.makeText(this, "Action not yet implemented", Toast.LENGTH_SHORT).show()
     }
 }

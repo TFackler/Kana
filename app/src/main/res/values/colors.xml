@@ -27,48 +27,48 @@
     <color name="main_color_on_error">#ffffff</color>
 
     <!-- Kanji Theme -->
-    <color name="kanji_color_primary">#6200ee</color>
-    <color name="kanji_color_primary_variant">#3700b3</color>
-    <color name="kanji_color_secondary">#03dac6</color>
-    <color name="kanji_color_secondary_variant">#018786</color>
+    <color name="kanji_color_primary">#1e88e5</color>
+    <color name="kanji_color_primary_variant">#6ab7ff</color>
+    <color name="kanji_color_secondary">#cfd8dc</color>
+    <color name="kanji_color_secondary_variant">#9ea7aa</color>
 
-    <color name="kanji_color_background">#ffffff</color>
+    <color name="kanji_color_background">#bbdefb</color>
     <color name="kanji_color_surface">#ffffff</color>
     <color name="kanji_color_error">#b00020</color>
 
-    <color name="kanji_color_on_primary">#ffffff</color>
+    <color name="kanji_color_on_primary">#000000</color>
     <color name="kanji_color_on_secondary">#000000</color>
     <color name="kanji_color_on_background">#000000</color>
     <color name="kanji_color_on_surface">#000000</color>
     <color name="kanji_color_on_error">#ffffff</color>
 
     <!-- Hiragana Theme -->
-    <color name="hiragana_color_primary">#6200ee</color>
-    <color name="hiragana_color_primary_variant">#3700b3</color>
-    <color name="hiragana_color_secondary">#03dac6</color>
-    <color name="hiragana_color_secondary_variant">#018786</color>
+    <color name="hiragana_color_primary">#64dd17</color>
+    <color name="hiragana_color_primary_variant">#9cff57</color>
+    <color name="hiragana_color_secondary">#cfd8dc</color>
+    <color name="hiragana_color_secondary_variant">#9ea7aa</color>
 
-    <color name="hiragana_color_background">#ffffff</color>
+    <color name="hiragana_color_background">#b9f6ca</color>
     <color name="hiragana_color_surface">#ffffff</color>
     <color name="hiragana_color_error">#b00020</color>
 
-    <color name="hiragana_color_on_primary">#ffffff</color>
+    <color name="hiragana_color_on_primary">#000000</color>
     <color name="hiragana_color_on_secondary">#000000</color>
     <color name="hiragana_color_on_background">#000000</color>
     <color name="hiragana_color_on_surface">#000000</color>
     <color name="hiragana_color_on_error">#ffffff</color>
 
     <!-- Katakana Theme -->
-    <color name="katakana_color_primary">#6200ee</color>
-    <color name="katakana_color_primary_variant">#3700b3</color>
-    <color name="katakana_color_secondary">#03dac6</color>
-    <color name="katakana_color_secondary_variant">#018786</color>
+    <color name="katakana_color_primary">#ffa000</color>
+    <color name="katakana_color_primary_variant">#ffd149</color>
+    <color name="katakana_color_secondary">#cfd8dc</color>
+    <color name="katakana_color_secondary_variant">#9ea7aa</color>
 
-    <color name="katakana_color_background">#ffffff</color>
+    <color name="katakana_color_background">#ffe082</color>
     <color name="katakana_color_surface">#ffffff</color>
     <color name="katakana_color_error">#b00020</color>
 
-    <color name="katakana_color_on_primary">#ffffff</color>
+    <color name="katakana_color_on_primary">#000000</color>
     <color name="katakana_color_on_secondary">#000000</color>
     <color name="katakana_color_on_background">#000000</color>
     <color name="katakana_color_on_surface">#000000</color>

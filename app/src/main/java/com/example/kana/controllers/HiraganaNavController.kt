@@ -12,6 +12,8 @@ class HiraganaNavController : Controller() {
         // change context to use other theme
         val contextThemeWrapper = ContextThemeWrapper(activity, R.style.HiraganaTheme)
         val localInflater = inflater.cloneInContext(contextThemeWrapper)
-        return localInflater.inflate(R.layout.controller_practice_nav, container, false)
+        val view : View = localInflater.inflate(R.layout.controller_practice_nav, container, false)
+        view.setBackgroundColor(container.context.getColor(R.color.hiragana_color_background))
+        return view
     }
 }

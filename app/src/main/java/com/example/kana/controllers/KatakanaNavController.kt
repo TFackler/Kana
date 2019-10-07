@@ -12,8 +12,9 @@ class KatakanaNavController : Controller() {
         // change context to use other theme
         val contextThemeWrapper = ContextThemeWrapper(activity, R.style.KatakanaTheme)
         val localInflater = inflater.cloneInContext(contextThemeWrapper)
-        return localInflater.inflate(R.layout.controller_practice_nav, container, false)
-
+        val view : View = localInflater.inflate(R.layout.controller_practice_nav, container, false)
+        view.setBackgroundColor(container.context.getColor(R.color.katakana_color_background))
+        return view
         // view.findViewById<TextView>(R.id.text_nav_info).text = container.context.getString(R.string.reading_nav_info)
     }
 }

@@ -127,6 +127,94 @@ object SyllableMatrix {
             Syllable("pu", "ぷ", "プ"),
             Syllable("pe", "ぺ", "ペ"),
             Syllable("po", "ぽ", "ポ")
+        ),
+
+        arrayOf(
+            Syllable("kya", "きゃ", "キャ"),
+            null,
+            Syllable("kyu", "きゅ", "キュ"),
+            null,
+            Syllable("kyo", "きょ", "キョ")
+        ),
+
+        arrayOf(
+            Syllable("sha", "しゃ", "シャ"),
+            null,
+            Syllable("shu", "しゅ", "シュ"),
+            null,
+            Syllable("sho", "しょ", "ショ")
+        ),
+
+        arrayOf(
+            Syllable("cha", "ちゃ", "チャ"),
+            null,
+            Syllable("chu", "ちゅ", "チュ"),
+            null,
+            Syllable("cho", "ちょ", "チョ")
+        ),
+
+        arrayOf(
+            Syllable("nya", "にゃ", "ニャ"),
+            null,
+            Syllable("nyu", "にゅ", "ニュ"),
+            null,
+            Syllable("nyo", "にょ", "ニョ")
+        ),
+
+        arrayOf(
+            Syllable("hya", "ひゃ", "ヒャ"),
+            null,
+            Syllable("hyu", "ひゅ", "ヒュ"),
+            null,
+            Syllable("hyo", "ひょ", "ヒョ")
+        ),
+
+        arrayOf(
+            Syllable("mya", "みゃ", "ミャ"),
+            null,
+            Syllable("myu", "みゅ", "ミュ"),
+            null,
+            Syllable("myo", "みょ", "ミョ")
+        ),
+
+        arrayOf(
+            Syllable("rya", "りゃ", "リャ"),
+            null,
+            Syllable("ryu", "りゅ", "リュ"),
+            null,
+            Syllable("ryo", "りょ", "リョ")
+        ),
+
+        arrayOf(
+            Syllable("gya", "ぎゃ", "ギャ"),
+            null,
+            Syllable("gyu", "ぎゅ", "ギュ"),
+            null,
+            Syllable("gyo", "ぎょ", "ギョ")
+        ),
+
+        arrayOf(
+            Syllable("ja", "じゃ", "ジャ"),
+            null,
+            Syllable("ju", "じゅ", "ジュ"),
+            null,
+            Syllable("jo", "じょ", "ジョ")
+        ),
+
+        arrayOf(
+            Syllable("bya", "びゃ", "ビャ"),
+            null,
+            Syllable("byu", "びゅ", "ビュ"),
+            null,
+            Syllable("byo", "びょ", "ビョ")
+        ),
+
+        arrayOf(
+            Syllable("pya", "ぴゃ", "ピャ"),
+            null,
+            Syllable("pyu", "ぴゅ", "ピュ"),
+            null,
+            Syllable("pyo", "ぴょ", "ピョ")
         )
     )
 
@@ -138,9 +226,10 @@ object SyllableMatrix {
      * @param consonant the consonant of the syllable
      * @return the specified syllable as a String.
      */
-    fun getSyllable(vowel: Char, consonant: Char): Syllable? {
+    fun getSyllable(vowel: String, consonant: Char): Syllable? {
         val rowPosition: Int
-        when (vowel) {
+        val isYVariant = vowel[0] == 'y'
+        when (if (isYVariant) vowel[1] else vowel[0]) {
             'a' -> rowPosition = 0
             'i' -> rowPosition = 1
             'u' -> rowPosition = 2
@@ -149,23 +238,42 @@ object SyllableMatrix {
             else -> rowPosition = -1
         }
         val columnPosition: Int
-        when (consonant) {
-            'a' -> columnPosition = 0
-            'k' -> columnPosition = 1
-            's' -> columnPosition = 2
-            't' -> columnPosition = 3
-            'n' -> columnPosition = 4
-            'h' -> columnPosition = 5
-            'm' -> columnPosition = 6
-            'y' -> columnPosition = 7
-            'r' -> columnPosition = 8
-            'w' -> columnPosition = 9
-            'g' -> columnPosition = 11
-            'z' -> columnPosition = 12
-            'd' -> columnPosition = 13
-            'b' -> columnPosition = 14
-            'p' -> columnPosition = 15
-            else -> columnPosition = -1
+        if (!isYVariant) {
+            when (consonant) {
+                'a' -> columnPosition = 0
+                'k' -> columnPosition = 1
+                's' -> columnPosition = 2
+                't' -> columnPosition = 3
+                'n' -> columnPosition = 4
+                'h' -> columnPosition = 5
+                'm' -> columnPosition = 6
+                'y' -> columnPosition = 7
+                'r' -> columnPosition = 8
+                'w' -> columnPosition = 9
+                'g' -> columnPosition = 11
+                'z' -> columnPosition = 12
+                'd' -> columnPosition = 13
+                'b' -> columnPosition = 14
+                'p' -> columnPosition = 15
+                else -> columnPosition = -1
+            }
+        } else {
+            when (consonant) {
+                'k' -> columnPosition = 16
+                's' -> columnPosition = 17
+                't' -> columnPosition = 18
+                'c' -> columnPosition = 18
+                'n' -> columnPosition = 19
+                'h' -> columnPosition = 20
+                'm' -> columnPosition = 21
+                'r' -> columnPosition = 22
+                'g' -> columnPosition = 23
+                'z' -> columnPosition = 24
+                'j' -> columnPosition = 24
+                'b' -> columnPosition = 25
+                'p' -> columnPosition = 26
+                else -> columnPosition = -1
+            }
         }
 
         return if (rowPosition == -1 || columnPosition == -1) {
